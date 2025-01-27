@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Learning Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+        <p>Loading sounds...</p>
+    </div>
+
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="score">Score: <span id="score">0</span></div>
+        
+        <div class="letters-container">
+            <button class="letter" id="letter1"></button>
+            <button class="letter" id="letter2"></button>
+            <button class="letter" id="letter3"></button>
+        </div>
+
+        <button class="play-button" id="playSound">
+            <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </button>
+
+        <div class="fireworks" id="fireworks"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
